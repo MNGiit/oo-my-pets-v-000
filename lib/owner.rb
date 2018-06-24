@@ -55,6 +55,7 @@ class Owner
     @pets.each do |species|
       species.each {|pet| pet.mood = "nervous"}
     end
+    @pets
   end
       
   
