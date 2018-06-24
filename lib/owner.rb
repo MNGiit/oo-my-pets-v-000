@@ -5,7 +5,7 @@ class Owner
   
   def initialize(name)
     @name = name
-    @@all << self
+    @@all << self #add self to the array
   end
   
   def self.all #shows all owners
