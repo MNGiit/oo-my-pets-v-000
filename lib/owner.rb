@@ -1,6 +1,6 @@
 class Owner
   # code goes here
-  attr_reader :name
+  attr_reader :name, :species
   @@all = [] #keeps track of the owners that have been created
   
   def initialize(name)
