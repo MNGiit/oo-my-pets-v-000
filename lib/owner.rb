@@ -8,6 +8,7 @@ class Owner
     @name = name
     @@all << self #add self to the array
     @species = "human"
+    
   end
   
   def self.all #shows all owners
