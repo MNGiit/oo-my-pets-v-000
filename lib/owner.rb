@@ -1,7 +1,7 @@
 class Owner
   # code goes here
-  attr_accessor :name, :pets
-  attr_reader :species
+  attr_accessor :name,
+  attr_reader :species, :pets
   @@all = [] #keeps track of the owners that have been created
   
   def initialize(name)
@@ -52,10 +52,9 @@ class Owner
   end
   
   def sell_pets
-    @pets.each do |species|
-      species.each {|pet| pet.mood = "nervous"}
-    end
-    @pets
+    @pets[:dogs].each {|dog| dog.mood = "nervous"}
+    @pets[:cats].each {|cat| cat.mood = "nervous"}
+    @pets[:fishes].each {|fish| fish.mood = "nervous"}
   end
   
   def list_pets
