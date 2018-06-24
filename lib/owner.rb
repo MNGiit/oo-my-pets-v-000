@@ -6,6 +6,7 @@ class Owner
   def initialize(name)
     @name = name
     @@all << self #add self to the array
+    @species = "human"
   end
   
   def self.all #shows all owners
@@ -18,6 +19,10 @@ class Owner
   
   def self.count
     @@all.count
+  end
+  
+  def say_species
+    "I am a human."
   end
   
 end
